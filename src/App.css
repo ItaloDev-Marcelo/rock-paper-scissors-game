@@ -20,20 +20,20 @@ body {
 
 #icon1 {
   position: relative;
-  left: -9em;
+  left: -7em;
   top: -2em;
 }
 
 #icon2 {
   position: relative;
-  left: 9em;
+  left: 7em;
   top: -8em;
 }
 
 #icon3 {
   position: relative;
   left: 0;
-  top: 1em;
+  top: -1.5em;
 }
 
 
