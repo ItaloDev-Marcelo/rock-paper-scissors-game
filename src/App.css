@@ -3,29 +3,68 @@
 @import "tailwindcss";
 
 /* - Weights: 600, 700 */
-
 @theme {
-   /* ### Primary */
-  --color-Gold-500: hsl(39, 89%, 49%);
-  --color-Gold-600:  hsl(28, 76%, 44%);
-  --color-Blue-500:  hsl(230, 89%, 62%);
-  --color-Blue-700:   hsl(229, 64%, 46%);
-  --color-Red-600:    hsl(349, 71%, 52%);
-  --color-Red-800:  hsl(347, 75%, 35%);
-  --color-Purple-600:     hsl(261, 73%, 60%);
-  --color-Purple-700: hsl(261, 51%, 44%);
-  --color-light-blue-400:hsl(189, 59%, 53%);
-  --color-light-blue-500:  hsl(194, 58%, 42%);
   /* ### Neutral */
-   --color-Navy-dark-text: hsl(229, 25%, 31%);
-  --color-Blue-score-text: hsl(229, 64%, 46%);
-  --color-Gray-header-outline: hsl(246, 11%, 37%);
-  /* ### Background - Radial Gradient */
-  /* - Radial Gradient: hsl(214, 47%, 23%) to hsl(237, 48%, 15%) */
-  --color-radial-1:  hsl(214, 47%, 23%) 
-    --color-radial-2: hsl(237, 48%, 15%)
+  --color-Navy-dark-text: #3B4363;
+  --color-Blue-score-text: #2A46C0;
+  --color-Gray-header-outline: #565468;
 }
+
+
+
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
+  background: linear-gradient(90deg, #1F3756, #141539)
+}
+
+#icon1 {
+  position: relative;
+  left: -9em;
+  top: -2em;
+}
+
+#icon2 {
+  position: relative;
+  left: 9em;
+  top: -8em;
+}
+
+#icon3 {
+  position: relative;
+  left: 0;
+  top: 1em;
+}
+
+
+
+#levelIcon1 {
+  position: relative;
+  left: 0;
+  top: 4.5em;
+}
+
+#levelIcon2 {
+  position: relative;
+  left: -8em;
+  top: 4.5em;
+}
+
+
+#levelIcon3 {
+  position: relative;
+  left: 9em;
+  top: -1em;
+}
+
+#levelIcon4 {
+  position: relative;
+  left: -5em;
+  top: 2em;
+}
+
+#levelIcon5 {
+  position: relative;
+  left: 5em;
+  top: -4em;
 }
