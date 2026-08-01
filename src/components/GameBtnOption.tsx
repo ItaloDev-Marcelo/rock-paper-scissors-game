@@ -2,7 +2,7 @@ import type { Btntype } from "../shared/types/BtnType"
 
 export const GameBtnOption = ({name,from,to,icon,scale,player, value}:Btntype) => {
   return (
-     <button id={name} className={`cursor-pointer bg-linear-to-r relative z-10 gap-10 rounded-full w-25 h-25 flex flex-col justify-center items-center 
+     <button id={name} className={`cursor-pointer bg-linear-to-r relative z-10 gap-10 rounded-full w-25 h-25 flex flex-col justify-center items-center hover:shadow-[0_0_0_35px_rgba(255,255,255,.04),0_0_0_70px_rgba(255,255,255,.03),0_0_0_110px_rgba(255,255,255,.02)] active:shadow-[0_0_0_35px_rgba(255,255,255,.04),0_0_0_70px_rgba(255,255,255,.03),0_0_0_110px_rgba(255,255,255,.02)]
                shadow-[0_8px_0_rgba(0,0,0,.25),0_12px_20px_rgba(0,0,0,.25)] ${scale}
               `}  style={{
     backgroundImage: `linear-gradient(to right, ${from}, ${to})`,
