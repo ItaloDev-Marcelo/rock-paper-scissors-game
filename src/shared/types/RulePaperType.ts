@@ -1,5 +1,5 @@
 import type { LevelType } from "./CommunType";
 
-export type ScoreType  = LevelType & {
-    ScoreResult: number;
+export type RulesType = LevelType & {
+  changeRules :() => void
 }
