@@ -1,11 +1,6 @@
-
 import { LevelLayout } from '../shared/constants/LevelLayout'
-import type { LevelType } from '../shared/types/CommunType'
+import type { GameLayoutType } from '../shared/types/GameLayoutType'
 import { GameBtnOption } from './GameBtnOption'
-
-type GameLayoutType = LevelType & {
-  player: (num:number) => void
-}
 
 const GameLayout = ({level,player}:GameLayoutType) => {
 

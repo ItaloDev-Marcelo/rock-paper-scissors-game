@@ -1,5 +1,5 @@
 import { logo_lv1, logo_lv2 } from "../assets/layout_images";
-import type { ScoreType } from "../shared/types/RulePaperType";
+import type { ScoreType } from "../shared/types/ScoreType";
 
 export const Score = ({ScoreResult,level}:ScoreType) => {
 

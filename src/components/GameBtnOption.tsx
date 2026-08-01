@@ -1,13 +1,4 @@
-
-type Btntype = {
-    name: string,
-    from: string,
-    to: string,
-    icon: string,
-    scale: string,
-    player: (num:number) => void,
-    value:number
-}
+import type { Btntype } from "../shared/types/BtnType"
 
 export const GameBtnOption = ({name,from,to,icon,scale,player, value}:Btntype) => {
   return (

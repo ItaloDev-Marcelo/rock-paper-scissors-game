@@ -1,9 +1,5 @@
 import { rules_lv1, rules_lv2 } from "../assets/layout_images"
-import type { LevelType } from "../shared/types/CommunType"
-
-type RulesType = LevelType & {
-  changeRules :() => void
-}
+import type { RulesType } from "../shared/types/RulePaperType"
 
 const RulesPapper = ({level,changeRules}:RulesType) => {
   const paperImage = level ? rules_lv1 : rules_lv2
