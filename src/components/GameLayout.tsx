@@ -12,7 +12,10 @@ const GameLayout = ({level,player}:GameLayoutType) => {
        <div className='relative'>
         {
         game.map((item,index) => (
-           <GameBtnOption key={index} value={item.value} name={item.name} from={item.from} to={item.to} icon={item.icon} scale='scale-135 xl:scale-100 hover:scale-110 xl:hover:scale-120' player={player}  />
+           <GameBtnOption key={index} value={item.value} name={item.name} from={item.from} to={item.to} icon={item.icon} scale='scale-135 xl:scale-100 hover:scale-110 xl:hover:scale-120
+           hover:shadow-[0_0_0_35px_rgba(255,255,255,.04),0_0_0_70px_rgba(255,255,255,.03),0_0_0_110px_rgba(255,255,255,.02)] active:shadow-[0_0_0_35px_rgba(255,255,255,.04),0_0_0_70px_rgba(255,255,255,.03),0_0_0_110px_rgba(255,255,255,.02)]
+               shadow-[0_8px_0_rgba(0,0,0,.25),0_12px_20px_rgba(0,0,0,.25)]
+           ' player={player}  />
         ))
        }
        </div>
