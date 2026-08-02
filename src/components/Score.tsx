@@ -8,11 +8,11 @@ export const Score = ({ScoreResult,level}:ScoreType) => {
   return (
     <div className="outline-3 rounded-md w-[95%] p-5 outline-Gray-header-outline flex flex-row justify-between  ">
         <div>
-            <img src={selectedImage} alt='Score-logo' className="w-25"/>
+            <img src={selectedImage} alt='Score-logo' className="w-22"/>
         </div>
-        <div className='bg-white w-20 h-20 rounded-md text-center p-2'>
+        <div className='bg-white w-15 h-15 scale-130 mt-1.5 rounded-md text-center p-2'>
              <h2 className='uppercase text-Blue-score-text font-medium'>Score</h2>
-             <p className="text-4xl mt-1 font-semibold text-Navy-dark-text opacity-80">{ScoreResult}</p>
+             <p className="text-[1.4em] -mt-1.5  font-semibold text-Navy-dark-text ">{ScoreResult}</p>
         </div>
     </div>
   )
