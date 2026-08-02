@@ -26,7 +26,6 @@
   }
 }
 
-
 /* - Weights: 600, 700 */
 @theme {
   /* ### Neutral */
@@ -37,11 +36,6 @@
    --animate-reveal2: revealImage2 2s ease-in ;
    --breakpoint-xxl: 90rem;
 }
-
-
-
-
-
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
