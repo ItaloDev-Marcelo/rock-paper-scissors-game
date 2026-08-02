@@ -7,7 +7,7 @@ const GameLayout = ({level,player}:GameLayoutType) => {
   const {finalLayout, game} = LevelLayout(level)
   
   return (
-    <div className="relative top-20 xl:top-30 flex flex-col scale-65 xl:scale-110 items-center justify-center w-full h-75">
+    <div className={`relative  flex flex-col scale-65 xl:scale-110 xxl:scale-130 items-center justify-center w-full h-75 ${level ? 'top-20 xl:top-38 xxl:top-45': 'top-15 xl:top-20 xxl:top-35' }`}>
     <img src={finalLayout} alt='' className='absolute h-65 ' />
        <div className='relative'>
         {

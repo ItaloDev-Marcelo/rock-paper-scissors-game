@@ -72,7 +72,7 @@ const Layout = () => {
           <WinnerBoard level={level} player={playerMove}
             machine={machineMove} remate={remate} textResult={textResult} />
       }
-      <div className='fixed bottom-10 w-full flex flex-row justify-between px-12'>
+      <div className='fixed bottom-10 w-full flex flex-row justify-between px-12 xxl:px-65'>
         <button onClick={changeRules} className='outline-2 hover:bg-white hover:text-black hover:font-bold rounded-md w-25 p-2 text-white outline-white'>Rules</button>
          <button onClick={LevelUp} className='outline-2 hover:bg-white hover:text-black hover:font-bold rounded-md w-25 p-2 text-white outline-white'>{level ? 'level 1': 'level 2'}</button>
       </div>

@@ -14,7 +14,7 @@ export const WinnerBoard = ({player,machine,level,remate,textResult}:WinnerBoard
    const result2 = textResult == 'You Lose'  
 
   return (
-    <div className="flex flex-col justify-between relative top-15  xl:top-15  items-center">
+    <div className="flex flex-col justify-between relative top-15  xl:top-15 xxl:top-30 xxl:scale-120 items-center">
        
        
         <div className='flex flex-row justify-between w-screen px-10 xl:px-5 xl:w-[50vw]   '>
