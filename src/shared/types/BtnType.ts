@@ -4,6 +4,6 @@ export type Btntype = {
     to: string,
     icon: string,
     scale: string,
-    player: (num:number) => void,
+    player?: (num:number) => void,
     value:number
 }
