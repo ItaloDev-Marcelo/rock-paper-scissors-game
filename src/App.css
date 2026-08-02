@@ -68,3 +68,16 @@ body {
   left: 5em;
   top: -4em;
 }
+
+
+.board #levelIcon1, .board #levelIcon2, .board #levelIcon3,.board #levelIcon4, .board #levelIcon5  {
+  position: relative;
+  top:0 ;
+  left:0 ;
+}
+
+.board #icon1, .board #icon2, .board #icon3  {
+  position: relative;
+  top:0 ;
+  left:0 ;
+}
