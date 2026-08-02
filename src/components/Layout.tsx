@@ -15,20 +15,16 @@ const Layout = () => {
 
   const logic = (player: number, machine: number) => {
 
-    const playerOneWins = (player === 1 && machine === 2) ||
-      (player === 1 && machine === 4) ||
+  const wins: Record<number, number[]> = {
+  1: [3, 5], // Paper -> Rock, Spock
+  2: [1, 4], // Scissors -> Paper, Lizard
+  3: [2, 4], // Rock -> Scissors, Lizard
+  4: [1, 5], // Lizard -> Paper, Spock
+  5: [2, 3], // Spock -> Scissors, Rock
+};
 
-      (player === 2 && machine === 3) ||
-      (player === 2 && machine === 4) ||
+const playerOneWins = wins[player].includes(machine);
 
-      (player === 3 && machine === 1) ||
-      (player === 3 && machine === 5) ||
-
-      (player === 4 && machine === 3) ||
-      (player === 4 && machine === 5) ||
-
-      (player === 5 && machine === 1) ||
-      (player === 5 && machine === 2);
 
     if (player === machine) {
       setTextResult('Draw')
