@@ -14,12 +14,12 @@ export const WinnerBoard = ({player,machine,level,remate,textResult}:WinnerBoard
    const result2 = textResult == 'You Lose'  
 
   return (
-    <div className="flex flex-col justify-between relative top-10 left-2 xl:top-25  items-center">
+    <div className="flex flex-col justify-between relative top-15  xl:top-15  items-center">
        
        
-        <div className='flex flex-row justify-between w-screen px-10 xl:px-5 xl:w-[45vw]  '>
-        <div className="flex flex-col items-center gap-6 xl:gap-10">
-          <div className={`bg-[#192845] w-25 h-25 rounded-full board ${result1 ? efeito : ''}`}>
+        <div className='flex flex-row justify-between w-screen px-10 xl:px-5 xl:w-[50vw]   '>
+        <div className="flex flex-col xl:flex-col-reverse items-center gap-6 xl:gap-25 animate-reveal1">
+          <div className={`bg-[#192845] w-25 h-25 rounded-full xl:scale-135  board ${result1 ? efeito : ''}`}>
            {
             playerW.map((item, index) => (
               <GameBtnOption key={index} value={item.value} name={item.name} from={item.from} to={item.to} icon={item.icon} scale='scale-100 xl:scale-150'/>
@@ -28,8 +28,8 @@ export const WinnerBoard = ({player,machine,level,remate,textResult}:WinnerBoard
         </div>
         <h2 className='font-semibold text-white uppercase tracking-wide'>You picked</h2>
         </div>
-        <div className="flex flex-col items-center gap-6 xl:gap-10">
-          <div className={`bg-[#192845] w-25 h-25 rounded-full board ${result2 ? efeito : ''}`}>
+        <div className="flex flex-col xl:flex-col-reverse items-center gap-6 xl:gap-25 animate-reveal2">
+          <div className={`bg-[#192845] w-25 h-25 rounded-full  xl:scale-135 board ${result2 ? efeito : ''}`}>
           {
             machineW.map((item, index) => (
               <GameBtnOption key={index} value={item.value} name={item.name} from={item.from} to={item.to} icon={item.icon} scale='scale-100 xl:scale-150'/>
@@ -43,7 +43,7 @@ export const WinnerBoard = ({player,machine,level,remate,textResult}:WinnerBoard
 
 
 
-        <div className="relative top-20 xl:-top-14 text-center">
+        <div className="relative top-20 xl:-top-20 text-center">
             <h3 className="text-white text-4xl font-semibold tracking-wider -mt-10 xl:-mt-15 mb-5">{textResult}</h3>
             <button onClick={remate} className="font-semibold text-gray-700 bg-white rounded-md w-50 h-12.5 cursor-pointer hover:outline houver:outline-1 hover:outline-white hover:bg-transparent hover:text-white">Play Again</button>
         </div>

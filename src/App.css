@@ -2,13 +2,42 @@
 
 @import "tailwindcss";
 
+@keyframes revealImage {
+  0% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes revealImage2 {
+  0% {
+    opacity: 0.25;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /* - Weights: 600, 700 */
 @theme {
   /* ### Neutral */
   --color-Navy-dark-text: #3B4363;
   --color-Blue-score-text: #2A46C0;
   --color-Gray-header-outline: #565468;
+   --animate-reveal1: revealImage ease-in forwards;
+   --animate-reveal2: revealImage2 2s ease-in ;
 }
+
+
 
 
 
