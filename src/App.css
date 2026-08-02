@@ -35,6 +35,7 @@
   --color-Gray-header-outline: #565468;
    --animate-reveal1: revealImage ease-in forwards;
    --animate-reveal2: revealImage2 2s ease-in ;
+   --breakpoint-xxl: 90rem;
 }
 
 
